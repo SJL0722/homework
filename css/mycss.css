@@ -1,0 +1,102 @@
+   body{
+            background-color: white;
+        }
+
+        .slide img {
+            height: auto;
+            width: 100%;
+        }
+
+        .carousel-inner .item {
+            margin-top: 5px;
+            height: 550px;
+            overflow: hidden;
+            width: 99.6%;
+            margin-left: 0.2%;
+            margin-right: 0.2%;
+            margin-bottom: 1px;
+            
+           
+            
+        }
+
+        .llq img {
+            margin-top: 5px;
+            width: 60%;
+            height: auto;
+        }
+
+        .section {
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .llq {
+            text-align: center;
+            padding: 0px 30px;
+        }
+
+        .llq .name {
+            font-size: 23px;
+        }
+
+        .llq .intr {
+            font-size: 16px;
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+            font-size: 18px;
+            
+          
+        }
+        .navbar .ul{
+            color: white;
+        }
+        
+
+        h1 {
+            font-size: 45px;
+            color: lightskyblue;
+        }
+
+        .mainIntr {
+            font-size: 9px;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .item {
+            position: relative;
+        }
+
+        .item-intr {
+            position: absolute;
+            bottom: 60px;
+            color: white;
+            width: 900px;
+            left: 50%;
+            margin-left: -450px;
+            text-align: center;
+        }
+        #myCarousel{
+            background-color:black;
+        }
+        p{
+            color:black;
+        }
+        navbar-header{
+            background-color: red;
+        }
+        .container-fluid{
+            background-color:black;
+            
+        }
