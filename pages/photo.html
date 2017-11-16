@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>个人网站</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+      
+        body{
+            background-color:white;
+        }
+
+        .userbar {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+       }
+           div {
+    display: block;
+              
+}
+     ul,  li {
+    list-style: none;
+         
+}
+   
+  ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+    li {
+    float:left;
+    display: list-item;
+    text-align: -webkit-match-parent;
+   margin-left: 10px;
+       
+}
+
+        .carousel-inner .item {
+            margin-top: 5px;
+            height: 550px;
+            overflow: hidden;
+            width: 99.6%;
+            margin-left: 0.2%;
+            margin-right: 0.2%;
+            margin-bottom: 1px;
+            
+           
+            
+        }
+    
+
+        .llq img {
+            margin-top: 5px;
+            width: 60%;
+            height: auto;
+        }
+
+        .section {
+            margin-top: 60px;
+            position: relative;
+             margin-bottom: 100px;
+        }
+
+        .llq {
+            text-align: center;
+            padding: 0px 30px;
+            
+        }
+
+        .llq .name {
+            font-size: 23px;
+           
+        }
+
+        .llq .intr {
+            font-size: 16px;
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+            font-size: 18px;
+            
+          
+        }
+        .navbar .ul{
+            color: white;
+        }
+        
+
+        h1 {
+            font-size: 45px;
+            color:#2a5caa;
+            text-align: center;
+        }
+        h1 small{
+            color: #2a5caa;
+            font-size: 25px;
+        }
+      
+     
+        .logo {
+            width: 100%;
+            height: auto;
+           margin-bottom: 500px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .item {
+            position: relative;
+        }
+
+        .item-intr {
+            position: absolute;
+            bottom: 60px;
+            color: white;
+            width: 900px;
+            left: 50%;
+            margin-left: -450px;
+            text-align: center;
+        }
+      
+        #myCarousel{
+            background-color:white ;
+           
+        }
+        
+        .row h2{
+           margin-top: 10%;
+        }
+       
+        .row p{
+            margin-bottom:3%;
+        }
+        .row p1{
+            font-size: 20px;
+           
+        }
+        
+        
+        .movie p{
+            font-size: 20px;
+        }
+        .logo{     
+            width:100%;     
+            height: 100%;     
+            background: url(./images/homeworktu/tou.png) no-repeat;     
+            border-radius:140px;     
+            -webkit-animation:run 6s linear 0s infinite;  
+            margin-top: 70px;
+            margin-bottom: 100px;
+            
+        }     
+     
+        .logo:hover{     
+            -webkit-animation-play-state:paused;     
+        }     
+     
+     
+        @-webkit-keyframes run{     
+            from{     
+                -webkit-transform:rotate(0deg);     
+            }     
+            to{     
+                -webkit-transform:rotate(360deg);     
+            }     
+        }   
+         .tutu{
+         margin-left: 10%;
+     }
+          #black{
+            background-color:black;
+            width: 100%;
+            height: 180px;
+            margin-top: 60px;
+        }
+        #black p{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 6px 6px;
+        }
+        
+    </style>
+    
+    
+   
+
+</head>
+
+<body>
+ <div class="nav">
+    <div id="nav-com_userbR" class="userbar" style="z-index: 10005;">
+    <ul>
+       <li class="u_login">
+           <div class="u_menu_item"><a href="./loyin.html" target="_blank">登录</a></div>
+       </li>
+      <li class="u_reg">
+           <div class="u_menu_item"><a href="./signup.html"target="_blank">注册</a></div>
+       </li>  
+       <li class="u_Back-stage management">
+           <div class="u_menu_item"><a href="#" onclick="return false;">后台管理</a></div>
+       </li> 
+    </ul> 
+ </div>
+    <nav class="navbar navbar-inverse  ">
+     <div class="container">
+            <div class="container-fluid" style="background-color:black" >
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="nav navbar-nav" style="background-color:black" >
+                   <div class="navbar-header" >
+                <a class="navbar-brand" href="./introduce.html" target="_blank">遇见汪の第一次</a>
+              
+            </div>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="homework.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank">了解汪の小世界<b class="caret"></b></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownId">
+                            <li><a class="dropdown-item" href="type.html" target="_blank">猎枪犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">狩猎犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">畜牧犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">工作犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">梗类犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">玩赏犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">家庭犬</a></li>
+                            
+                        </ul>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movie.html" target="_blank">汪の生活</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./master.html" target="_blank">饲养员の日常</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+
+        </div>
+        </div>
+    </nav>
+     <div id="myCarousel" class="carousel slide">
+	
+	 
+	
+	<div class="carousel-inner">
+		<div class="item active">
+			<a href="./movie.html"><img src="/image/banner1.jpg" alt="First slide"></a>
+		</div>
+		
+	</div>
+	
+	
+</div>    
+       
+   
+    </div>
+  <div>
+          <div class="row">
+         <div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>西伯利亚雪橇犬</h2>
+							<p>Siberian husky</p>
+							<p1>常见别名哈士奇，俗名为二哈。西伯利亚雪橇犬体重介于雄犬20-27公斤，雌犬16-23公斤，身高大约雄犬肩高53-58厘米，雌犬51-56厘米，是一种中型犬。
+                                西伯利亚雪橇犬是原始的古老犬种，在西伯利亚东北部、格陵兰南部生活。哈士奇名字的由来，是源自其独特的嘶哑声。哈士奇性格多变，有的极端胆小，也有的极端暴力，进入大陆和家庭的哈士奇，都已经没有了这种极端的性格，比较温顺，是一种流行于全球的宠物犬。与金毛犬、拉布拉多并列为三大无攻击型犬类。被世界各地广泛饲养，并在全球范围内，有大量该犬种的赛事。</p1>
+						</div>
+					</div>
+				</div>
+      
+  </div>
+    </div>
+
+    <div class="container">
+        <hr>
+       
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;狗狗介绍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+           
+        </ul>
+        </div>
+   
+
+    <div class="container section">
+        <div class="row">
+             <div class="col-lg-4 pull-left">
+              <div class="logo" >
+        <img src="/image/ha.png" alt="">
+    </div>  
+            </div>
+                <div class="googleIntr col-lg-7">
+            
+                <marquee direction="up" scrollamout="10"><p class="mainIntr" align="center">
+                    
+                              
+                   分布区月：分布区域西伯利亚东北部，格陵兰南部<br />
+                   原产地：俄罗斯西伯利亚地区<br />
+                   原始用途：雪地雪橇犬<br />
+                   今日用途：伴侣犬、雪橇竞赛犬<br />
+                   体型：中型犬<br />
+                   寿命：10年以上<br />
+                   体高：雄犬肩高53-58CM，雌犬51-56CM<br />
+                   体重：雄犬20-27公斤,雌犬16-23公斤<br>
+                   智商排名：45名<br>
+                    </p></marquee>
+   
+
+           
+           
+           
+           
+            </div>
+
+            
+        </div>
+    </div>
+     <div class="container">
+        <hr>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图视展示&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+           
+        </ul>
+    </div> 
+   <div class="llq container section">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+          <a href="homework.html" target="_blank"><img src="/image/ha1.png" alt="">
+              
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4">
+               <a href="homework.html" target="_blank">
+                 <img src="./image/ha2.png" alt="">
+                
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <a href="homework.html" target="_blank"><img src="./image/ha3.png" alt="">
+               
+                </a>
+            </div>
+        </div>
+       
+       
+       
+       <div class="movie">
+        <video src="./image/1.mp4" width="800px" height="600px"  controls="controls">  </video>
+        <p>二哈搞笑视频</p>
+        
+       </div>
+       
+    </div>
+    
+    
+      
+   
+   <div id="footer">
+     <div id="black"><br><p>汪の星球是宠物狗综合信息门户，创立于2017年，成立不久便凭借着良好的体验、优质的内容、</p><br>
+      <p>贴心的服务成为宠物行业的佼佼者，深受广大喜爱狗狗的人们的欢迎，是国内领先的宠物狗垂直门户之一。</p><br>
+         <p><a href="">关于汪の星球</a>
+      <a href="">联系我们</a>
+    <a href="">免责申明</a>
+      <a href="">用户协议</a></p>
+       
+       </div>
+        
+    </div>   
+
+  
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/init2.css">  
+        <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>  
+        <script type="text/javascript" src="./js/test2.js"></script>  
+    <script src="./vue.min%20(1).js"></script>
+    <link rel="stylesheet" href="./css/css.css" type="text/css">
+    <title>汪の星球</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+        }
+           th{
+            background-color: #EECFA1;
+            font-size: 16px;
+            padding: 3px 0 3px 0;
+           
+        }
+        th,td{
+            
+            font-size: 20px;
+            border-top: 1px solid #FFFFFF;
+            border-left: 1px solid #FFFFFF;
+            border-right: 1px solid #FFFFFF;
+            border-bottom: 1px solid #FFFFFF;
+            width: 900px;
+            text-align: center;
+        }
+        a{
+            color:#838B8B;
+        }
+        table{
+            margin-top: 30px;
+            border-bottom: 10px solid #FFFFFF; 
+            border-right: 10px solid #FFFFFF;
+            border-left:10px solid #FFFFFF; 
+            border-top: 10px solid #FFFFFF;
+            margin-bottom: 60px;
+        }
+        .banner1{
+            float: left;
+            width:76%;
+        }
+     
+        .main{
+            float: right;
+            width: 24%;
+          
+            
+        }
+          .banner2{
+             float: left;
+              width:50%;
+        }
+        .main2{
+           float: right;
+            width: 30%; 
+        }
+        .header.logo{
+            line-height: 1;
+            border: 5px solid #FF8C00;
+            padding: 10px 20px;
+            font-size: 30px;
+            display: inline-block;
+        }
+        .main {
+            width: 270px;
+            height: 450px;
+            background-color: #FF8C00;
+        }
+        .main a{
+            color: white;
+           font-size: 18px;
+           padding: 10px 10px;
+            
+            
+          
+        }
+          
+       
+        .img img {
+            margin-top: 5px;
+            width: 100%;
+            height: auto;
+        }
+
+        .section {
+            margin-top: 60px;
+            position: relative;
+             margin-bottom: 100px;
+        }
+
+        .img{
+            text-align: center;
+            padding: 0px 0px;
+            
+        }
+
+        .img .name {
+            font-size: 23px;
+           
+        }
+
+        .img .intr {
+            font-size: 16px;
+        }
+        .header-banner img{
+            width: 1600px;
+            height:800px;;
+            margin-left: 10%;
+        }
+        .flash{
+            margin-top: 60px;
+         
+        }
+        #black{
+            background-color:black;
+            width: 100%;
+            height: 180px;
+            margin-top: 60px;
+        }
+        #black p{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 6px 6px;
+        }
+        
+    </style>
+</head>
+
+<body>
+ 
+    <div class="nav">
+        <div id="nav-com_userbR" class="userbar" style="z-index: 10005;">
+            <ul>
+                <% if(isLogin) {%>
+                    <li class="u_login">
+                        <div class="u_menu_item">
+                            <a href="" target="_blank"><%=name%></a>
+                        </div>
+                    </li>
+                <% } else {%>
+                        <li class="u_login">
+                            <div class="u_menu_item">
+                                <a href="./loyin.html" target="_blank">登录</a>
+                            </div>
+                        </li>
+                        <li class="u_reg">
+                            <div class="u_menu_item">
+                                <a href="./signup.html" target="_blank">注册</a>
+                            </div>
+                        </li>
+                <%}%>
+                            <li class="u_Back-stage management">
+                                <div class="u_menu_item">
+                                    <a href="#" onclick="return false;">后台管理</a>
+                                </div>
+                            </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-inverse  ">
+            <div class="container">
+                <div class="container-fluid" style="background-color:black">
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="nav navbar-nav" style="background-color:black">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="./introduce.html" target="_blank">遇见汪の第一次</a>
+
+                            </div>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="type.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    target="_blank">了解汪の小世界
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <li>
+                                        <a class="dropdown-item" href="type.html" target="_blank">猎枪犬</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="type.html" target="_blank">狩猎犬</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="type.html" target="_blank">畜牧犬</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="type.html" target="_blank">工作犬</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="type.html" target="_blank">梗类犬</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="type.html" target="_blank">玩赏犬</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="type.html" target="_blank">家庭犬</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./movie.html" target="_blank">汪の生活</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./master.html" target="_blank">饲养员の日常</a>
+                            </li>
+
+                        </ul>
+                        
+
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </nav>
+  <div class="container">
+          <img src="/image/di.png" alt="">
+             <div class="three">
+       
+       
+       <div class="main2">
+      <div class="header">
+          <a href="" class="logo" >最新问题</a>
+      </div>
+      <hr>
+    <div class="nav2">
+     
+      <a href="" class="item">狗狗出生一个月总生病怎么办？</a><br>
+      <a href="" class="item">狗狗是不是尿频？需不需要去医院？</a><br>
+      <a href="" class="item">狗狗需要剃毛吗</a><br>  
+      <a href="" class="item">半岁边牧毛干涩，毛质不好怎么办啊？</a><br>
+      <a href="" class="item">如何辨别哈士奇是不是纯血统？</a><br>
+    </div>
+    
+</div>
+      <div class="banner2">
+ 
+      <img src="./image/master.jpg" alt="">
+  
+         </div>
+     </div>  
+   
+       
+     <img src="./image/di.png" alt="">
+       <hr>
+        <div>
+         <h1>待解决问题</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">狗狗多大做绝育比较好？</a></td>
+          <td><a href="">为什么狗狗总是舔爪子?</a></td>
+       
+      </tr>
+      <tr>
+          <td><a href="">得了“狗脚气”怎么办？</a></td>
+          <td><a href="">狗狗为什么爱吃纸?</a></td>
+       
+      </tr>
+       <tr>
+          <td><a href="">小狗长牙过程中的需求？</a></td>
+          <td><a href="">狗狗为什么要定期修剪脚掌的毛？</a></td>
+       
+      </tr>
+       <tr>
+          <td><a href="">狗狗为什么会得“狗脚气”？</a></td>
+          <td><a href="">为什么狗狗鼻子红？</a></td>
+       
+      </tr>
+       <tr>
+          <td><a href="">狗狗经常大便稀？</a></td>
+          <td><a href="">怎么教狗狗在固定地方大小便？</a></td>
+       
+      </tr>
+     
+   </table>
+     </div>
+     
+        </div>
+        <div>
+      
+</div> 
+                    </div>
+        </div>
+        
+    </div>
+    
+    <div id="footer">
+     <div id="black"><br><p>汪の星球是宠物狗综合信息门户，创立于2017年，成立不久便凭借着良好的体验、优质的内容、</p><br>
+      <p>贴心的服务成为宠物行业的佼佼者，深受广大喜爱狗狗的人们的欢迎，是国内领先的宠物狗垂直门户之一。</p><br>
+         <p><a href="">关于汪の星球</a>
+      <a href="">联系我们</a>
+    <a href="">免责申明</a>
+      <a href="">用户协议</a></p>
+       
+       </div>
+        
+    </div>
+   
+</body>
+
+</html>

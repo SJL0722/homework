@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+    <script src="./vue.min%20(1).js"></script>
+    <link rel="stylesheet" href="./css/css.css" type="text/css">
+    <title>汪の星球</title>
+    <style>
+            * {
+            margin: 0;
+            padding: 0;
+            
+        }
+      
+        body{
+            background-color:white;
+        }
+           table{
+            margin-top: 30px;
+            border-bottom: 5px solid #FF8C00; 
+            border-right: 10px solid #FF8C00;
+            border-left:10px solid #FF8C00; 
+            border-top: 5px solid #FF8C00;
+            margin-bottom: 60px;
+        }
+        .banner1{
+            float: left;
+            width:76%;
+        }
+     
+        .main{
+            float: right;
+            width: 24%;
+          
+            
+        }
+          .banner2{
+             float: left;
+              width:50%;
+        }
+        .main2{
+           float: right;
+            width: 30%; 
+        }
+        .header.logo{
+            line-height: 1;
+            border: 5px solid #FF8C00;
+            padding: 10px 20px;
+            font-size: 30px;
+            display: inline-block;
+        }
+        .main {
+            width: 270px;
+            height: 450px;
+            background-color: #FF8C00;
+        }
+        .main a{
+            color: white;
+           font-size: 18px;
+           padding: 10px 10px;
+            
+            
+          
+        }
+          
+       
+        .img img {
+            margin-top: 5px;
+            width: 100%;
+            height: auto;
+        }
+
+        .section {
+            margin-top: 60px;
+            position: relative;
+             margin-bottom: 100px;
+        }
+
+        .img{
+            text-align: center;
+            padding: 0px 0px;
+            
+        }
+
+        .img .name {
+            font-size: 16px;
+           
+        }
+
+        .img .intr {
+            font-size: 16px;
+        }
+        .header-banner img{
+            width: 1600px;
+            height:800px;;
+            margin-left: 10%;
+        }
+        #black{
+            background-color:black;
+            width: 100%;
+            height: 180px;
+            margin-top: 60px;
+        }
+        #black p{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 6px 6px;
+        }
+  
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <div id="nav-com_userbR" class="userbar" style="z-index: 10005;">
+    <ul>
+       <li class="u_login">
+           <div class="u_menu_item"><a href="./loyin.html" target="_blank">登录</a></div>
+       </li>
+      <li class="u_reg">
+           <div class="u_menu_item"><a href="./signup.html"target="_blank">注册</a></div>
+       </li>  
+       <li class="u_Back-stage management">
+           <div class="u_menu_item"><a href="#" onclick="return false;">后台管理</a></div>
+       </li> 
+    </ul> 
+ </div>
+    <nav class="navbar navbar-inverse  ">
+     <div class="container">
+            <div class="container-fluid" style="background-color:black" >
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="nav navbar-nav" style="background-color:black" >
+                   <div class="navbar-header" >
+                <a class="navbar-brand" href="./introduce.html" target="_blank">遇见汪の第一次</a>
+              
+            </div>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="homework.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank">了解汪の小世界<b class="caret"></b></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownId">
+                            <li><a class="dropdown-item" href="type.html" target="_blank">猎枪犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">狩猎犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">畜牧犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">工作犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">梗类犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">玩赏犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">家庭犬</a></li>
+                            
+                        </ul>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movie.html" target="_blank">汪の生活</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./master.html" target="_blank">饲养员の日常</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+
+        </div>
+        </div>
+    </nav>
+     <div id="myCarousel" class="carousel slide">
+	
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	
+	<div class="carousel-inner">
+		<div class="item active">
+			<a href="./movie.html"><img src="/image/banner3.jpg" alt="First slide"></a>
+		</div>
+		<div class="item">
+			<img src="/image/banner2.jpg" alt="Second slide">
+		</div>
+		<div class="item">
+			<img src="/image/banner1.png" alt="Third slide">
+		</div>
+	</div>
+	
+	<a class="carousel-control left" href="#myCarousel" 
+	   data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" 
+	   data-slide="next">&rsaquo;</a>
+</div>    
+       
+    <div class="container">
+        <div class="title">
+     <button>综合排序</button>
+     <button>最新发布</button>
+     <button>最热播放</button>
+       
+        </div>
+        <hr>
+        <img src="/image/di.png" alt="">
+         <div class="img">
+                     <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m1.png" alt="">
+                <p class="name">大屁股柯基</p>
+               
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m2.png" alt="">
+                <p class="name">一本正经的学习柴</p>
+                
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m3.png" alt="">
+                <p class="name">怂货二哈</p>
+                
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m4.png" alt="">
+                <p class="name">狗狗也可以化妆</p>
+                
+                </a>
+            </div>
+             <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m5.png" alt="">
+                <p class="name">柯基的歪头杀</p>
+                
+                </a>
+            </div>
+             <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m6.png" alt="">
+                <p class="name">两狗相争必有一伤</p>
+               
+                </a>
+            </div>
+           <img src="/image/di.png" alt=""> 
+        </div>
+          <div class="img">
+                     <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m3.png" alt="">
+                <p class="name">怂货二哈</p>
+               
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m1.png" alt="">
+                <p class="name">大屁股柯基</p>
+                
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m6.png" alt="">
+                <p class="name">两狗相争必有一伤</p>
+                
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m5.png" alt="">
+                <p class="name">柯基的歪头杀</p>
+                
+                </a>
+            </div>
+             <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m2.png" alt="">
+                <p class="name">一本正经的学习柴</p>
+                
+                </a>
+            </div>
+             <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m4.png" alt="">
+                <p class="name">狗狗也可以化妆犬</p>
+               
+                </a>
+            </div>
+            
+        </div>
+           <img src="/image/di.png" alt="">
+          <div class="img">
+                     <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m5.png" alt="">
+                <p class="name">柯基的歪头杀</p>
+               
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m4.png" alt="">
+                <p class="name">狗狗也可以化妆</p>
+                
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m1.png" alt="">
+                <p class="name">大屁股柯基</p>
+                
+                </a>
+            </div>
+              <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m6.png" alt="">
+                <p class="name">两狗相争必有一伤</p>
+                
+                </a>
+            </div>
+             <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m3.png" alt="">
+                <p class="name">怂货二哈</p>
+                
+                </a>
+            </div>
+             <div class="col-lg-2 col-lg-2">
+                <a href="#"><img src="./image/m2.png" alt="">
+                <p class="name">斗牛犬</p>
+               
+                </a>
+            </div>
+            
+        </div>
+       </div>
+    </div>
+      
+       
+   
+    
+       <div id="footer">
+     <div id="black"><br><p>汪の星球是宠物狗综合信息门户，创立于2017年，成立不久便凭借着良好的体验、优质的内容、</p><br>
+      <p>贴心的服务成为宠物行业的佼佼者，深受广大喜爱狗狗的人们的欢迎，是国内领先的宠物狗垂直门户之一。</p><br>
+         <p><a href="">关于汪の星球</a>
+      <a href="">联系我们</a>
+    <a href="">免责申明</a>
+      <a href="">用户协议</a></p>
+       
+       </div>
+        
+    </div>   
+</body>
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+    <script src="./vue.min%20(1).js"></script>
+    <link rel="stylesheet" href="./css/css.css" type="text/css">
+    <title>汪の星球</title>
+    <style>
+            * {
+            margin: 0;
+            padding: 0;
+            
+        }
+      
+        body{
+            background-color:white;
+        }
+
+       .img img {
+            margin-top: 5px;
+            width: 60%;
+            height: auto;
+        }
+
+        .section {
+            margin-top: 60px;
+            position: relative;
+             margin-bottom: 100px;
+        }
+
+        .img{
+            text-align: center;
+            padding: 0px 30px;
+            
+        }
+
+        .img .name {
+            font-size: 23px;
+           
+        }
+
+        .img .intr {
+            font-size: 16px;
+        }
+       th{
+            background-color: #EECFA1;
+            font-size: 16px;
+            padding: 3px 0 3px 0;
+           
+        }
+        th,td{
+            
+            font-size: 16px;
+            border-top: 1px solid #FFFFFF;
+            border-left: 1px solid #FFFFFF;
+            border-right: 1px solid #FFFFFF;
+            border-bottom: 1px solid #FFFFFF;
+            width: 140px;
+            text-align: center;
+        }
+        a{
+            color:#838B8B;
+        }
+        table{
+            margin-top: 30px;
+            border-bottom: 10px solid #FFFFFF; 
+            border-right: 10px solid #FFFFFF;
+            border-left:10px solid #FFFFFF; 
+            border-top: 10px solid #FFFFFF;
+            margin-bottom: 60px;
+        }
+           #black{
+            background-color:black;
+            width: 100%;
+            height: 180px;
+            margin-top: 60px;
+        }
+        #black p{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 6px 6px;
+        }
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <div id="nav-com_userbR" class="userbar" style="z-index: 10005;">
+    <ul>
+       <li class="u_login">
+           <div class="u_menu_item"><a href="./loyin.html" target="_blank">登录</a></div>
+       </li>
+      <li class="u_reg">
+           <div class="u_menu_item"><a href="./signup.html"target="_blank">注册</a></div>
+       </li>  
+       <li class="u_Back-stage management">
+           <div class="u_menu_item"><a href="#" onclick="return false;">后台管理</a></div>
+       </li> 
+    </ul> 
+ </div>
+    <nav class="navbar navbar-inverse  ">
+     <div class="container">
+            <div class="container-fluid" style="background-color:black" >
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="nav navbar-nav" style="background-color:black" >
+                   <div class="navbar-header" >
+                <a class="navbar-brand" href="./introduce.html" target="_blank">遇见汪の第一次</a>
+              
+            </div>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./type.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank">了解汪の小世界<b class="caret"></b></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownId">
+                            <li><a class="dropdown-item" href="type.html" target="_blank">猎枪犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">狩猎犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">畜牧犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">工作犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">梗类犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">玩赏犬</a></li>
+                            <li><a class="dropdown-item" href="type.html" target="_blank">家庭犬</a></li>
+                            
+                        </ul>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="./movie.html" target="_blank">汪の生活</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./master.html" target="_blank">饲养员の日常</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+
+        </div>
+        </div>
+    </nav>
+    
+    <div class="img container section">
+        <div class="img">
+            <div class="col-lg-3 col-lg-3">
+                <a href="photo.html"><img src="./image/hashiqi.png" alt="">
+                <p class="name">哈士奇</p>
+                <p class="intr">西伯利亚雪橇犬，常见别名哈士奇，是一种中型犬。</p>
+                </a>
+            </div>
+              <div class="col-lg-3 col-lg-3">
+                <a href="#"><img src="./image/bomei.png" alt="">
+                <p class="name">博美犬</p>
+                <p class="intr">博美是一种紧凑、短背、活跃的玩赏犬，学名哈多利系博美犬。</p>
+                </a>
+            </div>
+              <div class="col-lg-3 col-lg-3">
+                <a href="#"><img src="./image/chaiquan.png" alt="">
+                <p class="name">柴犬</p>
+                <p class="intr">柴犬是体型中等并且又最古老的犬，是上乘的狩猎犬。</p>
+                </a>
+            </div>
+              <div class="col-lg-3 col-lg-3">
+                <a href="#"><img src="./image/jinmao.png" alt="">
+                <p class="name">金毛寻回犬</p>
+                <p class="intr">金毛寻回犬是比较现代并很流行的狗的品种，是单猎犬。</p>
+                </a>
+            </div>
+            
+        </div>
+        <div class="img">
+                     <div class="col-lg-3 col-lg-3">
+                <a href="#"><img src="./image/bixiong.png" alt="">
+                <p class="name">比熊</p>
+                <p class="intr">比熊犬，原产于地中海地区，是一种小型犬品种。</p>
+                </a>
+            </div>
+              <div class="col-lg-3 col-lg-3">
+                <a href="#"><img src="./image/samoye.png" alt="">
+                <p class="name">萨摩耶</p>
+                <p class="intr">萨摩耶犬，别称萨摩耶。</p>
+                </a>
+            </div>
+              <div class="col-lg-3 col-lg-3">
+                <a href="#"><img src="./image/jiwawa.png" alt="">
+                <p class="name">吉娃娃</p>
+                <p class="intr">吉娃娃是目前人们所知道最古老的犬种之一。</p>
+                </a>
+            </div>
+              <div class="col-lg-3 col-lg-3">
+                <a href="#"><img src="./image/douniu.png" alt="">
+                <p class="name">斗牛犬</p>
+                <p class="intr">斗牛犬是犬科犬属的动物，是家犬的一个亚种。</p>
+                </a>
+            </div>
+            
+        </div>
+        <img src="./image/di.png" alt="">
+      <div>
+     <div>
+         <h1>A</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">阿富汗猎犬</a></td>
+          <td><a href="">阿拉斯加雪橇犬</a></td>
+          <td><a href="">爱尔兰红白雪达犬</a></td>
+          <td><a href="">爱尔兰猎狼犬</a></td>
+          <td><a href="">爱尔兰雪达犬</a></td>
+          <td><a href="">安娜托利亚牧羊犬</a></td>
+          <td><a href="">爱尔兰赛特犬</a></td>
+          <td><a href="">爱尔兰梗</a></td>
+      </tr>
+        <tr>
+          <td><a href="">爱尔兰软毛梗</a></td>
+          <td><a href="">爱尔兰水猎犬</a></td>
+          <td><a href="">爱斯基摩犬</a></td>
+          <td><a href="">澳大利亚牧牛犬</a></td>
+          <td><a href="">澳大利亚牧羊犬</a></td>
+          <td><a href="">爱尔兰峡谷梗</a></td>
+          <td><a href="">澳大利亚梗</a></td>
+          <td><a href="">丝毛梗</a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>B</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">巴哥犬</a></td>
+          <td><a href="">巴西獒犬</a></td>
+          <td><a href="">比利时牧羊犬</a></td>
+          <td><a href="">波尔多犬</a></td>
+          <td><a href="">波音达猎犬</a></td>
+          <td><a href="">伯恩山犬</a></td>
+          <td><a href="">巴西非勒犬</a></td>
+          <td><a href="">贝灵顿梗</a></td>
+      </tr>
+        <tr>
+          <td><a href="">比利牛斯牧羊犬</a></td>
+          <td><a href="">比利时特伏丹犬</a></td>
+          <td><a href="">比特犬</a></td>
+          <td><a href="">冰岛牧羊犬</a></td>
+          <td><a href="">边境牧羊犬</a></td>
+          <td><a href="">波兰低地牧羊犬</a></td>
+          <td><a href="">波利犬</a></td>
+          <td><a href="">波士顿梗</a></td>
+      </tr>
+       <tr>
+          <td><a href="">布列塔尼犬</a></td>
+          <td><a href="">巴吉度犬</a></td>
+          <td><a href="">巴斯特牛头犬</a></td>
+          <td><a href="">比熊犬</a></td>
+          <td><a href="">博得猎狐犬</a></td>
+          <td><a href="">博美犬</a></td>
+          <td><a href="">捕鼠梗犬</a></td>
+          <td><a href="">布鲁赛尔格里芬犬</a></td>
+      </tr>
+       <tr>
+          <td><a href="">卷毛比雄犬</a></td>
+          <td><a href="">比格犬</a></td>
+          <td><a href="">迷你贝吉格里芬凡丁犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>C</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">柴犬</a></td>
+          <td><a href="">川东猎犬</a></td>
+          <td><a href="">粗毛柯利犬</a></td>
+          <td><a href="">茶杯犬犬</a></td>
+          <td><a href="">查理王小猎犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+       
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>D</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">东非猎犬</a></td>
+          <td><a href="">大白熊犬</a></td>
+          <td><a href="">大丹犬</a></td>
+          <td><a href="">大瑞士山地犬</a></td>
+          <td><a href="">德国短毛波音达</a></td>
+          <td><a href="">德国牧羊犬</a></td>
+          <td><a href="">东德牧羊犬</a></td>
+          <td><a href="">斗牛马士提夫犬</a></td>
+      </tr>
+        <tr>
+          <td><a href="">杜宾犬</a></td>
+          <td><a href="">杜高犬</a></td>
+          <td><a href="">大麦町犬</a></td>
+          <td><a href="">德国宾莎犬</a></td>
+          <td><a href="">德国硬毛波音达</a></td>
+          <td><a href="">斗牛梗</a></td>
+          <td><a href="">斗牛犬</a></td>
+          <td><a href="">短腿长身梗</a></td>
+      </tr>
+     <tr>
+          <td><a href="">短毛猎狐梗</a></td>
+          <td><a href="">迷你杜宾犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+   </table>
+     </div>
+     
+        <div>
+         <h1>E</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">苏俄猎犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+       
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>F</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">法国狼犬</a></td>
+          <td><a href="">法老王猎犬</a></td>
+          <td><a href="">法国斗牛犬</a></td>
+          <td><a href="">芬兰猎犬犬</a></td>
+          <td><a href="">芬兰拉普猎犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+       
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>G</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">高加索犬</a></td>
+          <td><a href="">格力犬</a></td>
+          <td><a href="">英国古代牧羊犬</a></td>
+          <td><a href="">刚毛猎狐梗</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+       
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>H</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">红狼犬</a></td>
+          <td><a href="">黑狼犬</a></td>
+          <td><a href="">黑俄罗斯梗</a></td>
+          <td><a href="">黑褐猎浣熊犬</a></td>
+          <td><a href="">黑熊犬</a></td>
+          <td><a href="">红骨猎浣熊犬</a></td>
+          <td><a href="photo.html">哈士奇</a></td>
+          <td><a href="">荷兰毛狮犬</a></td>
+      </tr>
+        <tr>
+          <td><a href="">惠比特犬</a></td>
+          <td><a href="">哈瓦那犬</a></td>
+          <td><a href="">湖畔梗</a></td>
+          <td><a href="">蝴蝶犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>I</h1><hr>
+         <table>
+      <tr>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+       
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>J</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">卡南犬</a></td>
+          <td><a href="">捷克狼犬</a></td>
+          <td><a href="">金毛</a></td>
+          <td><a href="">卷毛寻回犬</a></td>
+          <td><a href="">加纳利犬</a></td>
+          <td><a href="">京巴犬</a></td>
+          <td><a href="">吉娃娃</a></td>
+          <td><a href="">杰克罗素梗</a></td>
+      </tr>
+        <tr>
+          <td><a href="">捷克梗</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>K</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">凯斯梗</a></td>
+          <td><a href="">可蒙犬</a></td>
+          <td><a href="">卡斯罗犬</a></td>
+          <td><a href="">库瓦兹犬</a></td>
+          <td><a href="">昆明犬</a></td>
+          <td><a href="">凯利蓝梗</a></td>
+          <td><a href="">可卡犬</a></td>
+          <td><a href="">卡迪根威尔士柯基犬</a></td>
+      </tr>
+        <tr>
+          <td><a href="">凯斯梗</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>L</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">狼青</a></td>
+          <td><a href="">兰波格犬</a></td>
+          <td><a href="">猎水獭犬</a></td>
+          <td><a href="">罗得西亚脊背犬</a></td>
+          <td><a href="">罗威纳犬</a></td>
+          <td><a href="">拉布拉多犬</a></td>
+          <td><a href="">腊肠犬</a></td>
+          <td><a href="">拉萨犬</a></td>
+      </tr>
+        <tr>
+          <td><a href="">猎狐梗</a></td>
+          <td><a href="">罗秦犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>M</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">美国斗牛犬</a></td>
+          <td><a href="">美国斗牛梗</a></td>
+          <td><a href="">马犬</a></td>
+          <td><a href="">马士提夫獒犬</a></td>
+          <td><a href="">美国猎狐犬</a></td>
+          <td><a href="">米格鲁猎兔犬</a></td>
+          <td><a href="">美国恶霸犬</a></td>
+          <td><a href="">美国水猎犬</a></td>
+      </tr>
+        <tr>
+          <td><a href="">马尔济斯犬</a></td>
+          <td><a href="">美国可卡犬</a></td>
+          <td><a href="">迷你牛头梗</a></td>
+          <td><a href="">墨西哥无毛犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>N</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">纽波利顿獒犬</a></td>
+          <td><a href="">纽芬兰犬</a></td>
+          <td><a href="">挪威伦德犬</a></td>
+          <td><a href="">牛头梗</a></td>
+          <td><a href="">挪威布哈德犬</a></td>
+          <td><a href="">挪威猎鹿犬</a></td>
+          <td><a href="">诺福克梗</a></td>
+          <td><a href=""></a></td>
+      </tr>
+        
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>O</h1><hr>
+         <table>
+     <tr>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+   </table>
+     </div>
+     
+        <div>
+         <h1>P</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">普罗特猎犬</a></td>
+          <td><a href="">葡萄牙水犬</a></td>
+          <td><a href="">帕尔森·罗塞尔梗</a></td>
+          <td><a href="">彭布罗克威尔士柯基犬</a></td>
+          <td><a href="">小型葡萄牙波登可犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+       
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>Q</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">奇努克犬</a></td>
+          <td><a href="">切萨皮克海湾寻回犬</a></td>
+          <td><a href="">秋田犬</a></td>
+          <td><a href="">拳师犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+      
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>R</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">日本狆</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+        
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>S</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">苏格兰牧羊犬</a></td>
+          <td><a href="">萨路基猎犬</a></td>
+          <td><a href="">圣伯纳犬</a></td>
+          <td><a href="">史毕诺犬</a></td>
+          <td><a href="">苏俄牧羊犬</a></td>
+          <td><a href="">苏格兰猎鹿犬</a></td>
+          <td><a href="">苏联红</a></td>
+          <td><a href="">沙皮犬</a></td>
+      </tr>
+        <tr>
+          <td><a href="">美国斯塔福梗</a></td>
+          <td><a href="">萨摩耶犬</a></td>
+          <td><a href="">山地犬</a></td>
+          <td><a href="">树丛浣熊犬</a></td>
+          <td><a href="">斯塔福郡斗牛梗</a></td>
+          <td><a href="">苏塞克斯猎犬</a></td>
+          <td><a href="">松狮犬</a></td>
+          <td><a href="">苏格兰梗</a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>T</h1><hr>
+         <table>
+         <tr>
+          <td><a href="">土佐犬</a></td>
+          <td><a href="">田园小猎犬</a></td>
+          <td><a href="">泰迪犬</a></td>
+          <td><a href="">贵宾犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>U</h1><hr>
+         <table>
+        <tr>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>V</h1><hr>
+         <table>
+         <tr>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>W</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">万能梗</a></td>
+          <td><a href="">威尔士跳猎犬</a></td>
+          <td><a href="">威玛猎犬</a></td>
+          <td><a href="">威尔士柯基犬</a></td>
+          <td><a href="">玩具猎狐梗</a></td>
+          <td><a href="">玩具晏彻斯特犬</a></td>
+          <td><a href="">威尔士梗</a></td>
+          <td><a href=""></a></td>
+      </tr>
+      
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>X</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">西里汗梗</a></td>
+          <td><a href="">下司犬</a></td>
+          <td><a href="">巨型雪纳瑞</a></td>
+          <td><a href="">寻血猎</a></td>
+          <td><a href="">维希拉猎犬</a></td>
+          <td><a href="">西半牙斗牛梗</a></td>
+          <td><a href="">雪纳瑞犬</a></td>
+          <td><a href="">新斯科舍猎鸭寻猎犬</a></td>
+      </tr>
+        <tr>
+          <td><a href="">西半牙小猎犬</a></td>
+          <td><a href="">西藏梗</a></td>
+          <td><a href="">爱斯基摩犬</a></td>
+          <td><a href="">喜乐蒂牧羊犬</a></td>
+          <td><a href="">细犬</a></td>
+          <td><a href="">迷你雪纳瑞</a></td>
+          <td><a href="">小鹿</a></td>
+          <td><a href="">西藏猎犬</a></td>
+      </tr>
+     <tr>
+          <td><a href="">西高地白梗</a></td>
+          <td><a href="">西帕基犬</a></td>
+          <td><a href="">西施犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+   </table>
+     </div>
+     
+        <div>
+         <h1>Y</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">英国斗牛犬</a></td>
+          <td><a href="">硬毛指示格里芬犬</a></td>
+          <td><a href="">英国猎狐犬</a></td>
+          <td><a href="">英格兰雪达犬</a></td>
+          <td><a href="">英国可卡犬</a></td>
+          <td><a href="">英国史宾格犬</a></td>
+          <td><a href="">伊比赞猎犬</a></td>
+          <td><a href="">约克夏梗</a></td>
+      </tr>
+        <tr>
+          <td><a href="">银狐犬</a></td>
+          <td><a href="">意大利灰狗</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+     
+   </table>
+     </div>
+     
+        <div>
+         <h1>Z</h1><hr>
+         <table>
+      <tr>
+          <td><a href="">藏獒</a></td>
+          <td><a href="">中亚牧羊犬</a></td>
+          <td><a href="">中国冠毛犬</a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+          <td><a href=""></a></td>
+      </tr>
+       
+     
+   </table>
+     </div>
+    </div>
+    
+     
+    </div>
+    </div>
+     <div id="footer">
+     <div id="black"><br><p>汪の星球是宠物狗综合信息门户，创立于2017年，成立不久便凭借着良好的体验、优质的内容、</p><br>
+      <p>贴心的服务成为宠物行业的佼佼者，深受广大喜爱狗狗的人们的欢迎，是国内领先的宠物狗垂直门户之一。</p><br>
+         <p><a href="">关于汪の星球</a>
+      <a href="">联系我们</a>
+    <a href="">免责申明</a>
+      <a href="">用户协议</a></p>
+       
+       </div>
+        
+    </div>
+</body>
+</html>
